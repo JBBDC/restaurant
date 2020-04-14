@@ -35,8 +35,7 @@ header {
 
 .header__image img {
   display: none;
-  width: 50vw;
-  max-height: auto; }
+  width: 50vw; }
 
 .menu {
   width: 100%;
@@ -87,7 +86,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/bg-yellow.jpg") repeat #fc0; }
+  background: url("images/bg-yellow.jpg") repeat #fc0; }
 
 .text-column {
   display: flex;
@@ -338,7 +337,7 @@ footer {
     .special_odd {
       flex-flow: row-reverse; } }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 550px) and (max-resolution: 1.3dppx), (min-width: 645px) and (orientation: landscape) {
   .nowrap {
     white-space: nowrap;
     flex-direction: row;
@@ -384,7 +383,7 @@ footer {
     .social a {
       align-items: flex-end; } }
 
-@media only screen and (min-width: 645px) {
+@media only screen and (min-width: 645px) and (max-resolution: 1.3dppx), (min-width: 645px) and (orientation: landscape) {
   .header__menu {
     margin: 30px 5px; }
     .header__menu .menu__item {
@@ -447,7 +446,7 @@ footer {
 
 @media only screen and (min-width: 1010px) and (min-width: 1200px) and (min-aspect-ratio: 12 / 7) {
   header {
-    background: url("../images/background-1.jpg") no-repeat #ebebeb;
+    background: url("images/background-1.jpg") no-repeat #ebebeb;
     background-position: left;
     background-size: cover;
     height: 100vh; }
@@ -461,7 +460,7 @@ footer {
   footer .container {
     position: relative;
     align-items: flex-end;
-    background: url("../images/background-footer.jpg") no-repeat #ebebeb;
+    background: url("images/background-footer.jpg") no-repeat #ebebeb;
     background-position: top left;
     background-size: contain; }
   footer .copyright {
