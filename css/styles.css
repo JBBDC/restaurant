@@ -259,6 +259,7 @@ footer {
     padding-bottom: 37px; }
 
 .nowrap {
+  width: 100%;
   white-space: normal;
   display: flex;
   flex-direction: column;
@@ -266,8 +267,8 @@ footer {
   justify-content: center; }
 
 .contacts {
-  max-width: 570px;
-  margin: 0 60px; }
+  max-width: 550px;
+  margin: 0 40px; }
   .contacts__title {
     margin-top: 69px; }
     .contacts__title span {
@@ -293,7 +294,7 @@ footer {
     align-items: center;
     justify-content: center; }
   .contacts__form {
-    margin-top: 102px;
+    margin-top: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,15 +304,17 @@ footer {
       margin-top: 52px; }
   .contacts__form-header {
     font-size: 1.125rem; }
-  .contacts__form-name-email-block label, .contacts__form-message label {
-    padding: 12px 19px;
-    font-size: 1.125rem;
-    font-style: italic; }
-  .contacts__form-name-email-block input, .contacts__form-message input {
-    max-width: 167px;
-    border: unset;
-    background: #ebebeb;
-    border-bottom: 1px solid #3c3c3c; }
+  .contacts__form-name-email-block, .contacts__form-message {
+    width: 100%; }
+    .contacts__form-name-email-block label, .contacts__form-message label {
+      padding: 12px 19px;
+      font-size: 1.125rem;
+      font-style: italic; }
+    .contacts__form-name-email-block input, .contacts__form-message input {
+      width: 100%;
+      border: unset;
+      background: #ebebeb;
+      border-bottom: 1px solid #3c3c3c; }
   .contacts__form-name-email-block input, .contacts__form-message input {
     margin-top: 21px; }
   .contacts__form-message {
@@ -339,12 +342,13 @@ footer {
 
 @media only screen and (min-width: 550px) {
   .nowrap {
+    width: auto;
     white-space: nowrap;
     flex-direction: row;
     border-bottom: 1px solid #3c3c3c;
     margin-top: 41px; }
   .contacts {
-    width: 100%; }
+    width: 90%; }
     .contacts__contacts-block {
       display: flex;
       flex-direction: row;
@@ -357,6 +361,7 @@ footer {
     .contacts__form-name-email-block, .contacts__form-message {
       width: 100%; }
       .contacts__form-name-email-block input, .contacts__form-message input {
+        max-width: 167px;
         border-bottom: none;
         margin-top: 0; }
     .contacts__form-name-email-block {
@@ -449,7 +454,7 @@ footer {
 
 @media only screen and (min-width: 1010px) and (min-width: 1200px) and (min-aspect-ratio: 12 / 7) {
   header {
-    background: url("images/background-1.jpg") no-repeat #ebebeb;
+    background: url("../images/background-1.jpg") no-repeat #ebebeb;
     background-position: left;
     background-size: cover;
     height: 100vh; }
@@ -459,11 +464,11 @@ footer {
   .header__menu {
     margin: 10px 10px 0px auto; } }
 
-@media only screen and (min-width: 1010px) and (min-width: 1492px) and (min-aspect-ratio: 12 / 7) {
+@media only screen and (min-width: 1010px) and (min-width: 1200px) and (min-aspect-ratio: 12 / 7) {
   footer .container {
     position: relative;
     align-items: flex-end;
-    background: url("images/background-footer.jpg") no-repeat #ebebeb;
+    background: url("../images/background-footer.jpg") no-repeat #ebebeb;
     background-position: top left;
     background-size: contain; }
   footer .copyright {
@@ -487,4 +492,9 @@ footer {
   .special_one {
     flex-flow: row; }
   .special_two {
-    flex-flow: row-reverse; } }
+    flex-flow: row-reverse; }
+  .contacts {
+    max-width: 570px;
+    margin: 0 60px; }
+    .contacts__form {
+      margin-top: 102px; } }
